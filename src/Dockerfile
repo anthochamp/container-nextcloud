@@ -1,4 +1,4 @@
-FROM nextcloud:29-apache
+FROM nextcloud:30-apache
 
 # reconfigure php image (do not output access log to stdout, use production php.ini)
 RUN set -ex; \
