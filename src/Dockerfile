@@ -10,7 +10,7 @@ RUN set -ex; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends libsmbclient-dev; \
 	apt-get install -y --no-install-recommends ffmpeg libreoffice; \
-	apt-get install -y --no-install-recommends ghostscript; \
+	apt-get install -y --no-install-recommends ghostscript smbclient; \
 	apt-get clean; \
 	rm -rf /var/lib/apt/lists/*
 
