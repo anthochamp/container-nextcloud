@@ -3,7 +3,7 @@ set -eu
 
 if [ -n "${NEXTCLOUD_AUDIT_LOG:-}" ]; then
 	auditLog=
-	if grep '^/' "$NEXTCLOUD_AUDIT_LOG"; then
+	if expr "$NEXTCLOUD_AUDIT_LOG" : '^/' >/dev/null; then
 		auditLog=$NEXTCLOUD_AUDIT_LOG
 	else
 		auditLog="/var/log/nextcloud/$NEXTCLOUD_AUDIT_LOG"
