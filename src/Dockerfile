@@ -20,10 +20,9 @@ RUN set -ex; \
 	docker-php-ext-enable smbclient;
 
 # https://stackoverflow.com/questions/52998331/imagemagick-security-policy-pdf-blocking-conversion
-# ghostscript version on bookworm is 10.0
 RUN set -ex; \
-	sed 's/domain="coder" rights="none"/domain="coder" rights="read,write"/g' /etc/ImageMagick-6/policy.xml > /etc/ImageMagick-6/policy.xml.tmp; \
-	mv /etc/ImageMagick-6/policy.xml.tmp /etc/ImageMagick-6/policy.xml
+	sed 's/domain="coder" rights="none"/domain="coder" rights="read,write"/g' /etc/ImageMagick-7/policy.xml > /etc/ImageMagick-7/policy.xml.tmp; \
+	mv /etc/ImageMagick-7/policy.xml.tmp /etc/ImageMagick-7/policy.xml
 
 RUN set -ex; \
 	mkdir -p /var/log/nextcloud; \
