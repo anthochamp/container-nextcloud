@@ -15,9 +15,16 @@ See [README.md](README.md) for full documentation and configuration reference.
 
 - `x.y-nextcloudA.B.C`: Latest patch of `x.y` with Nextcloud `A.B.C`.
 - `x-nextcloudA.B.C`: Latest minor+patch of `x` with Nextcloud `A.B.C`.
+- `x.y.z-nextcloudA.B`: Version `x.y.z` with latest patch of Nextcloud `A.B` (only latest container version updated).
+- `x.y-nextcloudA.B`: Latest patch of `x.y` with latest patch of Nextcloud `A.B`.
+- `x-nextcloudA.B`: Latest minor+patch of `x` with latest patch of Nextcloud `A.B`.
+- `x.y.z-nextcloudA`: Version `x.y.z` with latest minor+patch of Nextcloud `A` (only latest container version updated).
+- `x.y-nextcloudA`: Latest patch of `x.y` with latest minor+patch of Nextcloud `A`.
+- `x-nextcloudA`: Latest minor+patch of `x` with latest minor+patch of Nextcloud `A`.
 - `x.y.z`: Version `x.y.z` with latest Nextcloud (only latest container version updated).
-- `x.y`: Latest patch of `x.y` with latest Nextcloud (only latest container major.minor updated).
-- `x`: Latest minor+patch of `x` with latest Nextcloud (only latest container major updated).
+- `x.y`: Latest patch of `x.y` with latest Nextcloud.
+- `x`: Latest minor+patch of `x` with latest Nextcloud.
+- `nextcloudA.B.C`: Latest container with Nextcloud `A.B.C`.
 - `nextcloudA.B`: Latest container with latest patch of Nextcloud `A.B`.
 - `nextcloudA`: Latest container with latest minor+patch of Nextcloud `A`.
 - `latest`: Latest `x.y.z-nextcloudA.B.C` tag.

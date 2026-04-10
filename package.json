@@ -1,5 +1,7 @@
 {
 	"private": true,
+	"description": "Nextcloud container with previews, face recognition, and audit logging",
+	"author": "Anthony Champagne <dev@anthonychampagne.fr>",
 	"scripts": {
 		"test": "node --import=tsx --test-concurrency 1 --test tests/**/*.test.*",
 		"tsc:check": "tsc -noEmit -p ./tsconfig.json",
