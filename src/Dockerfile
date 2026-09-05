@@ -1,4 +1,4 @@
-FROM nextcloud:34.0.2-apache@sha256:d7666d54d87c58d52869ddda36d1acbd4a7f53faf8ab6b91293daf204f3434e8
+FROM nextcloud:34.0.3-apache@sha256:b97df9e0e1ee3c8c6cc009cb3f12ddce915d624d543b3bb93882025fe323a407
 
 # reconfigure php image (do not output access log to stdout, use production php.ini)
 RUN set -ex; \
